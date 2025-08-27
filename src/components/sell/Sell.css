@@ -1,0 +1,342 @@
+.sell {
+  padding: var(--spacing-lg);
+}
+
+.sell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  
+}
+
+.sell-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  
+}
+
+.sell-date-range {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-end;
+  padding: var(--spacing-md) 0;
+  margin-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.sell-date-range .sell-form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.sell-date-range .sell-form-label {
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-medium);
+}
+
+.sell-date-range .sell-form-input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+.sell-date-range .sell-form-input:focus {
+  outline: none;
+  border-color: var(--info-blue);
+}
+
+.sell-stats {
+  text-align: center;
+  padding: var(--spacing-md);
+  background-color: rgba(33, 150, 243, 0.1);
+  border-radius: var(--border-radius);
+}
+
+.sell-stats h3 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--info-blue);
+}
+
+.sell-stats p {
+  margin-bottom: 0;
+  color: var(--text-medium);
+}
+
+.sell-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.sell-search {
+  position: relative;
+}
+
+.sell-search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-medium);
+}
+
+.sell-reset-button {
+  display: flex;
+  align-items: flex-end;
+  height: 38px;
+}
+
+.sell-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+}
+
+.sell-table th,
+.sell-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sell-table th {
+  background-color: var(--background-light);
+  font-weight: 600;
+}
+
+.sell-table tr:hover {
+  background-color: var(--background-hover);
+}
+
+.sell-product-image {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.sell-product-name {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.sell-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sell-badge-success {
+  background-color: var(--success-light);
+  color: var(--success-green);
+}
+
+.sell-badge-warning {
+  background-color: var(--warning-light);
+  color: var(--warning-orange);
+}
+
+.sell-empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-medium);
+}
+
+.sell-form {
+  padding: var(--spacing-lg);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sell-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.sell-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.sell-form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.sell-form-label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.sell-form-input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.sell-form-input:focus {
+  outline: none;
+  border-color: var(--info-blue);
+}
+
+.sell-form-select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  background-color: white;
+}
+
+.sell-form-select:focus {
+  outline: none;
+  border-color: var(--info-blue);
+}
+
+.sell-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.sell-form-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.sell-form-button-primary {
+  background-color: var(--info-blue);
+  color: white;
+}
+
+/* .sell-form-button-primary:hover {
+  background-color: var(--info-dark-blue);
+} */
+
+.sell-form-button-secondary {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+.sell-form-button-secondary:hover {
+  background-color: var(--background-hover);
+}
+
+.sell-form-input-error {
+  border-color: var(--error-red) !important;
+  background-color: var(--error-light) !important;
+}
+
+.sell-form-error {
+  color: var(--error-red);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.sell-form-error-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--error-light);
+  color: var(--error-red);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin: 1rem 0;
+}
+
+.sell-form-error-message svg {
+  color: var(--error-red);
+  min-width: 24px;
+}
+
+.sell-form-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Transaction history styles */
+.sell-history {
+  margin-top: var(--spacing-lg);
+}
+
+.sell-history h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.sell-buyer-contact {
+  font-size: 0.8rem;
+  color: var(--text-medium);
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Empty summary state */
+.sell-summary-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.sell-stats-message {
+  color: var(--text-medium);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Date actions styling */
+.sell-date-actions {
+  display: flex;
+  align-items: flex-end;
+  margin-left: var(--spacing-md);
+}
+
+/* Date range indicator */
+.sell-date-indicator {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  margin-top: 0.75rem;
+  font-style: italic;
+} 

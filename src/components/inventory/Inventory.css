@@ -1,0 +1,100 @@
+.inventory {
+  padding: var(--spacing-lg);
+}
+
+.inventory-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.inventory-search {
+  position: relative;
+}
+
+.inventory-search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-medium);
+}
+
+.inventory-reset-button {
+  display: flex;
+  align-items: flex-end;
+  height: 38px;
+}
+
+.inventory-product-image {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.inventory-product-name {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-lg);
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.inventory-table th {
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+.inventory-table tr:hover {
+  background-color: var(--background-hover);
+}
+
+.inventory-table .donated-row {
+  background-color: var(--success-light);
+}
+
+.inventory-table .wasted-row {
+  background-color: var(--error-light);
+}
+
+.inventory-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.inventory-badge-success {
+  background-color: var(--success-light);
+  color: var(--success-green);
+}
+
+.inventory-badge-error {
+  background-color: var(--error-light);
+  color: var(--error-red);
+}
+
+.inventory-badge-warning {
+  background-color: var(--warning-light);
+  color: var(--warning-orange);
+}
+
+.inventory-empty-state {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-medium);
+} 
